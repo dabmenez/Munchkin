@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bksu3tpgjffq8"
-path="res://.godot/imported/pngtree-brown-wooden-cartoon-png-image_3470586-removebg-preview 1.png-b103839cc6a74a61b70f2e3e18587a34.ctex"
+uid="uid://blubo5t6eqyys"
+path="res://.godot/imported/cardBacks.png-fd029c721d3175b82a508000ba98dbf4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagens/pngtree-brown-wooden-cartoon-png-image_3470586-removebg-preview 1.png"
-dest_files=["res://.godot/imported/pngtree-brown-wooden-cartoon-png-image_3470586-removebg-preview 1.png-b103839cc6a74a61b70f2e3e18587a34.ctex"]
+source_file="res://Assets/cardBacks.png"
+dest_files=["res://.godot/imported/cardBacks.png-fd029c721d3175b82a508000ba98dbf4.ctex"]
 
 [params]
 

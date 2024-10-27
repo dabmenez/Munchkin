@@ -10,6 +10,21 @@ config_version=5
 
 [application]
 
-config/name="munticking"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/name="muntiking_game"
+run/main_scene="res://Scenes/World.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Game="*res://Scripts/Global/Game.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

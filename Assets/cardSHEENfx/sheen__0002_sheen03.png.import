@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cldha3yt2pra1"
-path="res://.godot/imported/KIN_GameLogo.png-0e410a436be6437ad2862fce052ca72b.ctex"
+uid="uid://b8fwcmm3lc40g"
+path="res://.godot/imported/sheen__0002_sheen03.png-8e34e8f01a0da33176c3febe2db72d17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagens/KIN_GameLogo.png"
-dest_files=["res://.godot/imported/KIN_GameLogo.png-0e410a436be6437ad2862fce052ca72b.ctex"]
+source_file="res://Assets/cardSHEENfx/sheen__0002_sheen03.png"
+dest_files=["res://.godot/imported/sheen__0002_sheen03.png-8e34e8f01a0da33176c3febe2db72d17.ctex"]
 
 [params]
 

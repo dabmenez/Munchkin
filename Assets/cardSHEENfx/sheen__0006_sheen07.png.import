@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://creo8mgy10e2l"
-path="res://.godot/imported/png-clipart-munchkin-card-game-dungeon-crawl-board-game-munchkin-card-game-thumbnail.png-9395b1f0dda0bd084e2aeb112df06cad.ctex"
+uid="uid://bkf78fdjrb0rp"
+path="res://.godot/imported/sheen__0006_sheen07.png-f1ee128a12138e93d053d0ddc2f31b16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagens/png-clipart-munchkin-card-game-dungeon-crawl-board-game-munchkin-card-game-thumbnail.png"
-dest_files=["res://.godot/imported/png-clipart-munchkin-card-game-dungeon-crawl-board-game-munchkin-card-game-thumbnail.png-9395b1f0dda0bd084e2aeb112df06cad.ctex"]
+source_file="res://Assets/cardSHEENfx/sheen__0006_sheen07.png"
+dest_files=["res://.godot/imported/sheen__0006_sheen07.png-f1ee128a12138e93d053d0ddc2f31b16.ctex"]
 
 [params]
 
