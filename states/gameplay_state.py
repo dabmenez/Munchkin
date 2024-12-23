@@ -19,7 +19,10 @@ class GameplayState:
         pass
 
     def draw(self):
-        self.game.screen.fill(PRETO)
-        info_surf = self.game.fonte.render("Jogo rodando... (ESC para voltar)", True, BRANCO)
-        info_rect = info_surf.get_rect(center=(self.game.largura//2, self.game.altura//2))
-        self.game.screen.blit(info_surf, info_rect)
+        base_surf = self.game.base_surface
+        base_surf.fill(PRETO)
+
+        # Texto central
+        text_surf = self.game.fonte.render("Tela de Jogo - Pressione ESC para voltar", True, BRANCO)
+        text_rect = text_surf.get_rect(center=(640, 360))  # Centro da base (1280x720)
+        base_surf.blit(text_surf, text_rect)
