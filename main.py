@@ -16,8 +16,8 @@ class Game:
         pygame.mixer.init()
 
         # Resolução inicial da JANELA
-        self.largura = 1280
-        self.altura  = 720
+        self.largura = 1920
+        self.altura  = 1080
         self.screen = pygame.display.set_mode((self.largura, self.altura))
         pygame.display.set_caption("Meu Jogo Escalonado")
 
