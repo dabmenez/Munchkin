@@ -4,11 +4,13 @@ from classes.hand import Hand
 
 class Player:
     """Representa o jogador no jogo."""
-    def __init__(self, name):
+    def __init__(self, name, ia=False):
         self.name = name            # Nome do jogador
         self.level = 1              # Nível inicial
         self.hand = Hand()          # Mão do jogador
         self.backpack = []          # Mochila do jogador (itens extras)
+        self.equipped_items = []    # Itens equipados pelo jogador
+        self.ia = ia                # Define se é IA ou jogador humano
 
     def increase_level(self, amount=1):
         """Aumenta o nível do jogador."""
