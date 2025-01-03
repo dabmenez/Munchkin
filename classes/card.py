@@ -1,20 +1,79 @@
-# classes/card.py
-
 class Card:
-    """Representa uma carta do jogo."""
-    def __init__(self, name, value, description=None, image_path=None):
-        self.name = name          # Nome da carta (ex.: "Espada", "Poção", etc.)
-        self.value = value        # Valor ou poder da carta
-        self.description = description  # Descrição opcional (efeito, etc.)
-        self.image_path = image_path    # Caminho da imagem da carta
-        self.image = None               # Será carregada no jogo
-
-    def load_image(self):
-        """Carrega a imagem da carta (chamado no estado do jogo)."""
-        if self.image_path:
-            import pygame
-            self.image = pygame.image.load(self.image_path).convert_alpha()
+    """Classe base para todas as cartas."""
+    def __init__(self, nome, descricao, imagem=None):
+        """
+        nome: Nome da carta
+        descricao: Descrição ou efeito da carta
+        imagem: Caminho para a imagem da carta (opcional)
+        """
+        self.nome = nome
+        self.descricao = descricao
+        self.imagem = imagem
 
     def __str__(self):
-        """Retorna uma representação textual da carta."""
-        return f"{self.name} (Valor: {self.value})"
+        """Representação textual da carta."""
+        return f"{self.nome}: {self.descricao}"
+
+
+class MonsterCard(Card):
+    """Representa uma carta de monstro."""
+    def __init__(self, nome, nivel, tesouros, texto_derrota, texto_vitoria, imagem=None):
+        """
+        nome: Nome do monstro
+        nivel: Nível do monstro
+        tesouros: Quantidade de tesouros que o monstro concede ao ser derrotado
+        texto_derrota: Efeito ou penalidade ao perder para o monstro
+        texto_vitoria: Recompensa adicional ao vencer o monstro
+        imagem: Caminho para a imagem da carta (opcional)
+        """
+        super().__init__(nome, f"Monstro Nível {nivel}", imagem)
+        self.nivel = nivel
+        self.tesouros = tesouros
+        self.texto_derrota = texto_derrota
+        self.texto_vitoria = texto_vitoria
+
+    def aplicar_efeitos_derrota(self, jogador):
+        """Aplica os efeitos de derrota ao jogador."""
+        print(f"{jogador.name} sofreu derrota contra {self.nome}: {self.texto_derrota}")
+
+    def aplicar_efeitos_vitoria(self, jogador):
+        """Aplica os efeitos de vitória ao jogador."""
+        print(f"{jogador.name} venceu {self.nome} e recebeu: {self.texto_vitoria}")
+
+
+class TreasureCard(Card):
+    """Representa uma carta de tesouro."""
+    def __init__(self, nome, bonus, descricao, imagem=None):
+        """
+        nome: Nome do tesouro
+        bonus: Bônus que o tesouro concede ao jogador
+        descricao: Descrição ou efeito do tesouro
+        imagem: Caminho para a imagem da carta (opcional)
+        """
+        super().__init__(nome, descricao, imagem)
+        self.bonus = bonus
+
+    def aplicar_bonus(self, jogador):
+        """
+        Aplica o bônus ao jogador.
+        Em termos do novo diagrama, normalmente
+        isso significaria 'equipar' ou 'usar' o item
+        (ex.: jogador.equipment.equip_item(self)).
+        """
+        print(f"{jogador.name} equipou {self.nome} e ganhou +{self.bonus} de poder.")
+
+
+class CurseCard(Card):
+    """Representa uma carta de maldição."""
+    def __init__(self, nome, efeitos, imagem=None):
+        """
+        nome: Nome da maldição
+        efeitos: Descrição do efeito da maldição
+        imagem: Caminho para a imagem da carta (opcional)
+        """
+        super().__init__(nome, efeitos, imagem)
+        self.efeitos = efeitos
+
+    def aplicar_maldicao(self, jogador):
+        """Aplica os efeitos da maldição ao jogador."""
+        print(f"{jogador.name} foi amaldiçoado: {self.efeitos}")

@@ -1,5 +1,3 @@
-# classes/hand.py
-
 from classes.card import Card
 
 class Hand:

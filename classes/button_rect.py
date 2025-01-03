@@ -1,5 +1,3 @@
-# classes/button_rect.py
-
 import pygame
 from config import BRANCO
 
