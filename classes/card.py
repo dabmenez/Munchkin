@@ -1,5 +1,3 @@
-# classes/card.py
-
 class Card:
     """Classe base para todas as cartas."""
     def __init__(self, nome, descricao, imagem=None):
@@ -56,7 +54,12 @@ class TreasureCard(Card):
         self.bonus = bonus
 
     def aplicar_bonus(self, jogador):
-        """Aplica o bônus ao jogador."""
+        """
+        Aplica o bônus ao jogador.
+        Em termos do novo diagrama, normalmente
+        isso significaria 'equipar' ou 'usar' o item
+        (ex.: jogador.equipment.equip_item(self)).
+        """
         print(f"{jogador.name} equipou {self.nome} e ganhou +{self.bonus} de poder.")
 
 

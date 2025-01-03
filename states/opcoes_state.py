@@ -3,7 +3,6 @@ from config import PRETO, BRANCO, CINZA, CINZA_ESCURO
 from classes.slider import Slider
 from classes.button_rect import ButtonRect
 
-
 class OpcoesState:
     def __init__(self, game):
         self.game = game
@@ -63,23 +62,33 @@ class OpcoesState:
         base_surf = self.game.base_surface
         base_surf.fill(PRETO)
 
-        # Título
+        # 1) Desenha o título "Opções"
         title = self.fonte.render("Opções", True, BRANCO)
-        base_surf.blit(title, title.get_rect(center=(self.center_x, 100)))
+        # Centraliza no topo (x = center_x, y = 100)
+        title_rect = title.get_rect(center=(self.center_x, 100))
+        base_surf.blit(title, title_rect)
 
-        # Volume
-        volume_text = f"Volume: {self.temp_volume}"
+        # 2) Desenha o texto do volume
+        volume_text = f"Volume: {self.slider_volume.value}"
         volume_surf = self.fonte.render(volume_text, True, BRANCO)
-        base_surf.blit(volume_surf, volume_surf.get_rect(center=(self.center_x, 250)))
+        volume_rect = volume_surf.get_rect(center=(self.center_x, 250))
+        base_surf.blit(volume_surf, volume_rect)
+
+        # 3) Desenha o slider
         self.slider_volume.draw(base_surf)
 
-        # Resolução
-        res_text = f"{self.resolutions[self.temp_resolution_index][0]} x {self.resolutions[self.temp_resolution_index][1]}"
+        # 4) Mostra a resolução selecionada
+        w, h = self.resolutions[self.temp_resolution_index]
+        res_text = f"{w} x {h}"
         res_surf = self.fonte.render(res_text, True, BRANCO)
-        base_surf.blit(res_surf, res_surf.get_rect(center=(self.center_x, 375)))
+        res_rect = res_surf.get_rect(center=(self.center_x, 375))
+        base_surf.blit(res_surf, res_rect)
+
+        # 5) Desenha os botões de navegação de resolução
         self.btn_res_esquerda.draw(base_surf)
         self.btn_res_direita.draw(base_surf)
 
-        # Botões
+        # 6) Desenha os botões "Voltar" e "Aplicar"
         self.btn_voltar.draw(base_surf)
         self.btn_aplicar.draw(base_surf)
+

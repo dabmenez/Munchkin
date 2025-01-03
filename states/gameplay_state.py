@@ -1,5 +1,8 @@
 import pygame
-from classes.deck import Deck
+
+# Em vez de "from classes.deck import Deck", 
+# podemos usar as novas classes DoorDeck e TreasureDeck:
+from classes.deck import DoorDeck, TreasureDeck, Deck
 from classes.card import MonsterCard, TreasureCard, CurseCard
 from classes.player import Player
 from classes.ai import AIController
@@ -14,8 +17,11 @@ class GameplayState:
         self.current_player = self.player
 
         # Inicializa os baralhos
-        self.door_deck = Deck()
-        self.treasure_deck = Deck()
+        # Substituímos Deck() por DoorDeck() e TreasureDeck()
+        self.door_deck = DoorDeck()
+        self.treasure_deck = TreasureDeck()
+        
+        # Descartes continuam como Deck genérico
         self.discard_door = Deck()
         self.discard_treasure = Deck()
 
@@ -28,37 +34,15 @@ class GameplayState:
             self.discard_treasure
         )
 
-        # Criação e distribuição inicial
-        self._create_decks()
+        # Distribuição inicial
         self._distribute_initial_cards()
 
-        # Fase do jogo
+        # Fase do jogo: definimos as fases conforme diagrama
+        # (FASE_COMPRAR_PORTA -> FASE_ENFRENTAR_MONSTRO -> FASE_COLETAR_TESOURO -> FASE_DESCARTE -> FASE_FIM_TURNO)
         self.game_phase = "FASE_COMPRAR_PORTA"  # Primeira fase
 
         # Mensagem informativa
         self.message = ""
-
-    def _create_decks(self):
-        """Cria os baralhos de porta e tesouro com cartas predefinidas."""
-        # Baralho de Porta
-        door_cards = [
-            MonsterCard("Goblin", nivel=1, tesouros=1, texto_derrota="Perde 1 nível", texto_vitoria="Ganha 1 tesouro extra", imagem="assets/cards/goblin.png"),
-            CurseCard("Perde 1 Nível", "Você perde 1 nível imediatamente.", imagem="assets/cards/curse.png"),
-        ]
-        for card in door_cards:
-            self.door_deck.add_card(card)
-
-        # Baralho de Tesouro
-        treasure_cards = [
-            TreasureCard("Espada +2", bonus=2, descricao="Aumenta seu poder em 2.", imagem="assets/cards/espada.png"),
-            TreasureCard("Poção de Cura", bonus=0, descricao="Cura um jogador.", imagem="assets/cards/pocao.png"),
-        ]
-        for card in treasure_cards:
-            self.treasure_deck.add_card(card)
-
-        # Embaralha os baralhos
-        self.door_deck.shuffle()
-        self.treasure_deck.shuffle()
 
     def _distribute_initial_cards(self):
         """Dá 3 cartas de porta e 3 de tesouro ao jogador e à IA."""
@@ -90,7 +74,7 @@ class GameplayState:
                 mx_base = int(mx * self.game.base_width / self.game.largura)
                 my_base = int(my * self.game.base_height / self.game.altura)
 
-                # Se for jogador humano e estiver na fase de comprar porta
+                # Se for jogador humano e estivermos na fase de COMPRAR PORTA
                 if self.current_player == self.player and self.game_phase == "FASE_COMPRAR_PORTA":
                     door_deck_rect = self._draw_door_deck(self.game.base_surface, self.door_deck, (300, 300))
                     if door_deck_rect.collidepoint((mx_base, my_base)):
@@ -98,21 +82,30 @@ class GameplayState:
                         if card:
                             self.player.hand.add_card(card)
                             self.message = f"Você comprou: {card.nome}"
-                            self.next_phase()  # Avança para próxima fase
+                            self.next_phase()  # Avança para a próxima fase
                         else:
                             self.message = "O baralho de portas está vazio!"
 
-                # Se for jogador humano e estiver na fase de comprar tesouro
-                if self.current_player == self.player and self.game_phase == "FASE_ACAO_PORTA":
+                # Se for jogador humano e estivermos na fase de ENFRENTAR_MONSTRO
+                # (ex: compra de cartas extras ou uso de cartas)
+                if self.current_player == self.player and self.game_phase == "FASE_ENFRENTAR_MONSTRO":
+                    # Exemplo: permitir comprar do baralho de tesouro (se suas regras permitirem)
                     treasure_deck_rect = self._draw_treasure_deck(self.game.base_surface, self.treasure_deck, (600, 300))
                     if treasure_deck_rect.collidepoint((mx_base, my_base)):
                         card = self.treasure_deck.draw_card()
                         if card:
                             self.player.hand.add_card(card)
-                            self.message = f"Você comprou: {card.nome}"
-                            self.next_phase()  # Avança para a fase de descarte
+                            self.message = f"Você (fase de Enfrentar) pegou do Tesouro: {card.nome}"
+                            # Talvez não avance a fase imediatamente; depende da regra
+                            # self.next_phase()
                         else:
                             self.message = "O baralho de tesouros está vazio!"
+
+                # Se for jogador humano e estivermos na fase de DESCARTE (ou COLETAR_TESOURO, etc.)
+                if self.current_player == self.player and self.game_phase == "FASE_COLETAR_TESOURO":
+                    # Ex.: poder comprar mais tesouros ou algo
+                    # Ajuste se quiser outra ação
+                    pass
 
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
@@ -120,23 +113,31 @@ class GameplayState:
 
     def update(self, dt):
         """Atualiza o estado do gameplay."""
-        # Se for a vez da IA, ela faz suas jogadas
+        # Se for a vez da IA, ela faz suas jogadas e avançamos a fase
         if self.current_player.ia:
             self.ai_controller.realizar_turno(self.game_phase)
-            self.next_phase()  # Exemplo: avança a fase após a jogada da IA
+            self.next_phase()  
 
     def next_phase(self):
         """
-        Avança para a próxima fase de turno.
-        Você pode adaptar a lógica conforme as regras do jogo.
+        Avança para a próxima fase de turno de acordo com o diagrama.
         """
         if self.game_phase == "FASE_COMPRAR_PORTA":
-            self.game_phase = "FASE_ACAO_PORTA"
-        elif self.game_phase == "FASE_ACAO_PORTA":
+            self.game_phase = "FASE_ENFRENTAR_MONSTRO"
+
+        elif self.game_phase == "FASE_ENFRENTAR_MONSTRO":
+            self.game_phase = "FASE_COLETAR_TESOURO"
+
+        elif self.game_phase == "FASE_COLETAR_TESOURO":
             self.game_phase = "FASE_DESCARTE"
+
         elif self.game_phase == "FASE_DESCARTE":
-            self.game_phase = "FASE_COMPRAR_PORTA"
+            self.game_phase = "FASE_FIM_TURNO"
+
+        elif self.game_phase == "FASE_FIM_TURNO":
             self.end_turn()
+            # Reinicia no FASE_COMPRAR_PORTA para o próximo jogador
+            self.game_phase = "FASE_COMPRAR_PORTA"
 
     def end_turn(self):
         """Alterna o jogador atual."""
@@ -150,14 +151,13 @@ class GameplayState:
         base_surf = self.game.base_surface
         base_surf.fill((0, 0, 0))
 
-        # 1. Desenhar informações do jogador
+        # 1. Informações do jogador
         self._draw_player_info(base_surf, self.player, (50, 50))
 
-        # 2. Desenhar informações da IA
+        # 2. Informações da IA
         self._draw_player_info(base_surf, self.opponent, (self.game.base_width - 350, 50), ia=True)
 
-        # 3. Desenhar os baralhos (sem texto, cada um com sua cor)
-        #    Usamos métodos separados: um para baralho de portas (marrom) e outro para baralho de tesouro (amarelo).
+        # 3. Desenhar os baralhos
         self._draw_door_deck(base_surf, self.door_deck, (300, 300))
         self._draw_treasure_deck(base_surf, self.treasure_deck, (600, 300))
 
@@ -165,10 +165,11 @@ class GameplayState:
         self._draw_hand(base_surf, self.player, (100, self.game.base_height - 220))
 
         # 5. Desenhar a mochila e os itens equipados do jogador
+        # Agora usamos player.mochila e player.equipment ao invés de backpack / equipped_items
         self._draw_backpack(base_surf, self.player, (100, self.game.base_height - 380))
         self._draw_equipped_items(base_surf, self.player, (600, self.game.base_height - 380))
 
-        # 6. Desenhar mensagem informativa (se existir)
+        # 6. Mensagem informativa
         if self.message:
             msg_surf = self.game.fonte.render(self.message, True, (255, 255, 0))
             base_surf.blit(msg_surf, (50, self.game.base_height - 280))
@@ -186,16 +187,16 @@ class GameplayState:
     def _draw_hand(self, surface, player, position):
         """Desenha as cartas na mão do jogador."""
         x_start, y_position = position
-        spacing = 120  # Ajuste do espaçamento horizontal
+        spacing = 120  # Espaçamento horizontal
 
         for i, card in enumerate(player.hand.cards):
             if card.imagem:
                 card_image = pygame.image.load(card.imagem).convert_alpha()
                 card_image = pygame.transform.scale(card_image, (100, 150))
             else:
-                # Caso não tenha imagem, desenhe um placeholder
                 card_image = pygame.Surface((100, 150))
                 card_image.fill((128, 0, 0))
+
             card_rect = card_image.get_rect(topleft=(x_start + i * spacing, y_position))
             surface.blit(card_image, card_rect)
 
@@ -206,13 +207,15 @@ class GameplayState:
         surface.blit(backpack_text, (x_start, y_position - 30))
 
         spacing = 120
-        for i, item in enumerate(player.backpack):
+        # Usamos player.mochila.get_items() ao invés de player.backpack
+        for i, item in enumerate(player.mochila.get_items()):
             if item.imagem:
                 item_image = pygame.image.load(item.imagem).convert_alpha()
                 item_image = pygame.transform.scale(item_image, (80, 120))
             else:
                 item_image = pygame.Surface((80, 120))
                 item_image.fill((0, 128, 0))
+
             item_rect = item_image.get_rect(topleft=(x_start + i * spacing, y_position))
             surface.blit(item_image, item_rect)
 
@@ -223,13 +226,15 @@ class GameplayState:
         surface.blit(equipped_text, (x_start, y_position - 30))
 
         spacing = 120
-        for i, item in enumerate(player.equipped_items):
+        # Usamos player.equipment.get_equipped() ao invés de player.equipped_items
+        for i, item in enumerate(player.equipment.get_equipped()):
             if item.imagem:
                 item_image = pygame.image.load(item.imagem).convert_alpha()
                 item_image = pygame.transform.scale(item_image, (80, 120))
             else:
                 item_image = pygame.Surface((80, 120))
                 item_image.fill((0, 0, 128))
+
             item_rect = item_image.get_rect(topleft=(x_start + i * spacing, y_position))
             surface.blit(item_image, item_rect)
 
@@ -240,9 +245,7 @@ class GameplayState:
         """
         x, y = position
         card_back = pygame.Surface((100, 150))
-        # Cor marrom (brown)
-        card_back.fill((139, 69, 19))
-        # Borda branca
+        card_back.fill((139, 69, 19))  # marrom
         pygame.draw.rect(card_back, (255, 255, 255), card_back.get_rect(), 3)
 
         deck_rect = card_back.get_rect(topleft=(x, y))
@@ -250,7 +253,7 @@ class GameplayState:
 
         # Quantidade de cartas
         count_surf = self.game.fonte.render(f"{len(deck)}", True, (255, 255, 255))
-        count_rect = count_surf.get_rect(midbottom=(x + 50, y + 150 + 20))  # um pouco abaixo do baralho
+        count_rect = count_surf.get_rect(midbottom=(x + 50, y + 170))  # um pouco abaixo
         surface.blit(count_surf, count_rect)
 
         return deck_rect
@@ -262,9 +265,7 @@ class GameplayState:
         """
         x, y = position
         card_back = pygame.Surface((100, 150))
-        # Cor amarela
-        card_back.fill((255, 255, 0))
-        # Borda branca
+        card_back.fill((255, 255, 0))  # amarelo
         pygame.draw.rect(card_back, (255, 255, 255), card_back.get_rect(), 3)
 
         deck_rect = card_back.get_rect(topleft=(x, y))
@@ -272,7 +273,7 @@ class GameplayState:
 
         # Quantidade de cartas
         count_surf = self.game.fonte.render(f"{len(deck)}", True, (0, 0, 0))
-        count_rect = count_surf.get_rect(midbottom=(x + 50, y + 150 + 20))  # um pouco abaixo do baralho
+        count_rect = count_surf.get_rect(midbottom=(x + 50, y + 170))
         surface.blit(count_surf, count_rect)
 
         return deck_rect

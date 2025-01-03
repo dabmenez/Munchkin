@@ -6,7 +6,6 @@ from config import (
 )
 from classes.button_image import ButtonImage
 
-
 class MenuState:
     def __init__(self, game):
         self.game = game

@@ -25,10 +25,12 @@ class ButtonImage:
                 # Salva o centro atual antes de redimensionar
                 center_anterior = self.rect.center
 
-                # Redimensiona a imagem
+                # Redimensiona a imagem em ~10%
                 new_width = int(self.image_original.get_width() * 1.1)
                 new_height = int(self.image_original.get_height() * 1.1)
-                self.image = pygame.transform.scale(self.image_original, (new_width, new_height))
+                self.image = pygame.transform.scale(
+                    self.image_original, (new_width, new_height)
+                )
 
                 # Define o novo rect no mesmo centro que estava
                 self.rect = self.image.get_rect(center=center_anterior)
