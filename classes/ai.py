@@ -1,4 +1,5 @@
-from classes.card import MonsterCard, CurseCard
+import random
+from classes.card import MonsterCard, CurseCard, TreasureCard
 
 class AIController:
     """
@@ -10,73 +11,111 @@ class AIController:
         self.treasure_deck = treasure_deck
         self.discard_door = discard_door
         self.discard_treasure = discard_treasure
+        self.message = ""  # Mensagem para exibir no GameplayState
 
     def realizar_turno(self, game_phase):
         """
         Realiza as ações do turno da IA com base no estado atual (fase) do jogo.
-        Possíveis fases, conforme o diagrama atualizado:
-          - FASE_COMPRAR_PORTA
-          - FASE_ENFRENTAR_MONSTRO
-          - FASE_COLETAR_TESOURO
-          - FASE_DESCARTE
-          - FASE_FIM_TURNO
+        Retorna True se a IA terminou a ação nesta fase e está pronta para avançar.
         """
+        self.message = ""
+
         if game_phase == "FASE_COMPRAR_PORTA":
             self._comprar_carta_porta()
+            return True  # Terminou ação de comprar porta
 
         elif game_phase == "FASE_ENFRENTAR_MONSTRO":
-            # Substitui a antiga "FASE_ACAO_PORTA"
-            self._jogar_carta_da_mao()
+            self._enfrentar_monstro()
+            return True
 
         elif game_phase == "FASE_COLETAR_TESOURO":
             self._coletar_tesouro()
+            return True
 
         elif game_phase == "FASE_DESCARTE":
             self._descartar_cartas_extras()
+            return True
 
-        elif game_phase == "FASE_FIM_TURNO":
-            # Nesta fase, normalmente a IA não faz nada específico; apenas finaliza o turno
-            pass
+        return False  # default
 
     def _comprar_carta_porta(self):
-        """
-        A IA compra uma carta do baralho de portas e decide o que fazer.
-        """
         card = self.door_deck.draw_card()
         if card:
-            self.player.hand.add_card(card)
-            print(f"IA comprou uma carta de porta: {card.nome}")
+            self.message = f"IA comprou carta de porta: {card.nome}"
             if isinstance(card, MonsterCard):
-                print(f"IA encontrou um monstro: {card.nome}. (Preparando para combate.)")
+                self.message += " [Monstro]"
+                self.player.hand.add_card(card)
+            elif isinstance(card, CurseCard):
+                self.message += " [Maldição]"
+                # Sofre efeitos
+                self.player.decrease_level()
+            else:
+                # Qualquer outra carta de porta
+                self.player.hand.add_card(card)
         else:
-            print("O baralho de portas está vazio!")
+            self.message = "IA tentou comprar do baralho de portas, mas está vazio!"
 
-    def _jogar_carta_da_mao(self):
+    def _enfrentar_monstro(self):
         """
-        Lógica básica para a IA 'jogar' (ou descartar) a primeira carta da mão.
-        No futuro, você pode implementar aqui a lógica de combate, se a carta for um monstro etc.
+        A IA decide se enfrenta ou foge do monstro que possua na mão.
         """
-        if self.player.hand.cards:
-            card = self.player.hand.cards.pop(0)
-            print(f"IA jogou (descartou) a carta: {card.nome}")
-            # Exemplo: se quiser descartar em discard_door:
-            self.discard_door.add_card(card)
+        encontrou_monstro = False
+        for card in self.player.hand.cards:
+            if isinstance(card, MonsterCard):
+                encontrou_monstro = True
+                if self.player.level >= card.nivel:
+                    self.message = (f"IA derrotou o monstro {card.nome} "
+                                    f"e ganhou {card.tesouros} tesouro(s).")
+                    self.player.increase_level()  # Ex: +1 nível
+                    # Compra tesouros
+                    for _ in range(card.tesouros):
+                        t_card = self.treasure_deck.draw_card()
+                        if t_card:
+                            self.player.hand.add_card(t_card)
+                    self.player.hand.remove_card(card)
+                    break
+                else:
+                    self.message = f"IA não consegue derrotar {card.nome}. Tentando fugir..."
+                    self._fugir(card)
+                    self.player.hand.remove_card(card)
+                    break
+        if not encontrou_monstro:
+            self.message = "IA não tinha monstro para enfrentar."
+
+    def _fugir(self, monstro):
+        dice_roll = random.randint(1, 6)
+        if dice_roll <= 3:
+            self.message += f" Fugiu com sucesso! (Dado {dice_roll})"
         else:
-            print("IA não tem cartas para jogar.")
+            self.message += f" Falhou na fuga! (Dado {dice_roll}) {monstro.texto_derrota}"
+            self.player.decrease_level()
 
     def _coletar_tesouro(self):
+        self.message = "IA está coletando tesouros."
+        # Exemplo: IA pega 2 tesouros
+        for _ in range(2):
+            t_card = self.treasure_deck.draw_card()
+            if t_card:
+                self.player.hand.add_card(t_card)
+                self.message += f" Pegou {t_card.nome}."
+        # Tentar equipar itens
+        self._tentar_equipar_itens()
+
+    def _tentar_equipar_itens(self):
         """
-        Fase opcional para IA coletar/comprar tesouros
-        (caso as regras o permitam após derrotar um monstro).
+        Faz a IA equipar todos os TreasureCards possíveis.
+        Aqui é bem simples: todo TreasureCard que can_equip, a IA equipa.
         """
-        # Exemplo mínimo (não faz nada especial):
-        print("IA está na fase de COLETAR TESOURO (ainda não implementado).")
+        for card in self.player.hand.cards[:]:
+            if isinstance(card, TreasureCard):
+                if self.player.equipment.can_equip(card):
+                    self.player.hand.remove_card(card)
+                    self.player.equipment.equip_item(card)
+                    self.message += f" (Equipa {card.nome})"
 
     def _descartar_cartas_extras(self):
-        """
-        A IA descarta cartas extras para manter o limite (ex: 5 cartas).
-        """
+        self.message = "IA está descartando cartas extras."
         while len(self.player.hand.cards) > 5:
             card = self.player.hand.cards.pop(0)
             self.discard_door.add_card(card)
-            print(f"IA descartou a carta: {card.nome}")
+            self.message += f" Descartou {card.nome}."
