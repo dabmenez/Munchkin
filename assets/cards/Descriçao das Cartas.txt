@@ -1,0 +1,741 @@
+						Porta
+3,872 Orcs. LVL 10.
++6 contra Anões, devido a rancores antigos.
+Coisas ruins: jogue um dado. Com 2 ou menos, eles o pisoteiam até a morte. Caso contrário, perca tantos níveis quanto o dado mostrar.
+3 Tesouros.
+
+Amazona. LVL 8.
+Não ataca as fêmeas; Apenas dá a elas 1 tesouro.
+Coisas ruins: Você levou um chute na bunda de uma mulher. Seu orgulho machista está perdido. Perca sua(s) classe(s). Se você já não tinha Classe, perca 3 níveis.
+2 Tesouros.
+
+Ancestral. +10 para monstro.
+Jogue durante o combate. Se o monstro for derrotado, compre dois tesouros extras.
+
+Tia Paladina. LVL 18.
+Uma criatura do inferno. +5 contra Clérigos, +5 contra personagens masculinos.
+Coisas ruins: Tira a tua armadura e dobra-te. Foste mau... Perde a tua armadura. Perder três níveis devido a um espancamento quase fatal.
+2 Levels. 4 Tesouros.
+
+Bebê. -5 para monstro.
+Jogue durante o combate. Se o monstro for derrotado, compre 1 Tesouro a menos (mínimo de 1).
+
+Durão. LVL 5
++5 contra Orcs.
+Coisas Más: Ele dá-te um pontapé no...ahh, ele dá-te um pontapé no rabo. Mostra a tua mão a todos e descarta quaisquer Monstros ou Melhoradores de Monstros que tenhas.
+2 Tesouros.
+
+Bardo. (Classe)
+Encantar: No seu turno de combate, você pode descartar uma carta e selecionar um rival. Cada um de vocês lança um dado. Se o seu roll vencer o dele, ele deverá ajudá-lo e não poderá pedir uma recompensa. Se falhar, você pode descartar novamente e tentar encantar outro rival, continuando até ter sucesso, desistir ou ficar sem cartas ou oponentes. Você não pode vencer o jogo com este poder.
+Má sorte: Ao vencer um combate no seu turno, compre um Tesouro extra. Olhe para todos eles e descarte imediatamente (sua escolha)
+
+Grande, Gordo e Peludo. LVL  6.
+Um munchkin que não é da sua festa! Mate-o!
+Coisas ruins: ele pega seus dados. Da próxima vez que você precisar lançar um dado, a pessoa à sua esquerda apenas lhe dirá o que você lançou.
+2 Tesouros.
+
+Pé Grande. LVL 12.
++3 contra Anões e Halflings.
+Coisas ruins: pisoteia você e come seu chapéu. Perca o capacete que você estava usando.
+3 Tesouros.
+
+Urso Bipolar. LVL 13.
+Jogue um dado. Num número par, você deve combatê-lo. Num número ímpar, ele foge e você não consegue pegá-lo... descartá-lo.
+Coisas ruins: jogue um dado. Num número par, você deve descartar duas cartas. Em um número ímpar, compre um Tesouro virado para cima. Urso estúpido.
+3 Tesouros.
+
+BullRog. LVL 18.
+Não perseguirá ninguém de LVL 4 ou inferior.
+Coisas ruins: você é esfolado até a morte.
+2 Levels. 5 Tesouros.
+
+Gatão Mercenário +2 Bônus.
+Pode ser usado apenas por mulheres.
+
+Alterar classe. (Maldição)
+Se você não tem Classe agora, esta maldição não terá efeito. Caso contrário, volte pela pilha de descarte, começando pelo descarte de cima. A primeira carta de Classe que você adquirir substitui sua(s) Classe(s) atual(is). Se você passar pelos descartes sem encontrar uma carta de Classe, você apenas perderá sua(s) própria(s) Classe(s).
+
+Alterar Raça. (Maldição)
+Se você não tiver Raça agora, esta maldição não terá efeito. Caso contrário, volte pela pilha de descarte, começando pelo descarte de cima. A primeira carta de Raça que você encontrar substitui sua(s) Raça(s) atual(is). Se você passar pelos descartes sem encontrar uma carta de Raça, você apenas perderá sua(s) própria(s) Raça(s).
+
+Clérigo Mercenário. +1 Bônus.
+Pode carregar e usar qualquer item que seja legal para um Clérigo usar. Seus bônus e habilidades contam para você.
+Você ganha +2 extra sempre que lutar contra um monstro morto-vivo ou demoníaco.
+
+Clérigo. (Classe) (REPETIDA 4x)
+Ressurreição: Quando chegar a hora de comprar cartas viradas para cima, você pode pegar algumas ou todas do topo da pilha de descarte apropriada.
+Você deve então descartar uma carta de sua mão para cada carta comprada.
+Turing: Você pode descartar até 3 cartas em combate contra uma criatura Morta-Viva. Cada descarte dá a você um bônus de +3.
+
+(Maldição)
+Perca o capacete que você está usando.
+
+Lodo Babando. LVL 1.
+Lodo nojento! +4 contra Elfos.
+Coisas ruins: descarte os calçados que você está usando. Perca um nível se você não tiver calçados.
+1 Tesouro.
+
+Anão. (Raça) (REPETIDA 2x)
+Você pode carregar qualquer número de itens grandes.
+Você pode ter 6 cartas na sua mão.
+
+Maldição!
+Cerveja Anã.
+-4 em seu próximo (ou atual) combate... a menos que você seja um Anão... nesse caso, esta "maldição" dá +4.
+
+Maldição!
+Maldição da Morte.
+Você sofre as Coisas Ruins da carta de Monstro mais alta nos descartes. Você não pode escapar fugindo.
+
+Elfo. (Raça) (REPETIDA 2X)
++1 para fugir.
+Você sobe de nível para cada monstro que ajuda alguém a matar.
+
+Enfurecido.
++5 para o monstro.
+Jogue durante o combate. Se o monstro for derrotado, compre um Tesouro extra.
+
+Sugador de rosto. LVL 8.
+É nojento! +6 contra elfos.
+Coisas ruins: quando ele suga seu rosto, seu capacete vai junto. Descarte o capacete que você está usando e perca um nível.
+2 Tesouros.
+
+Podre de rico.
+Jogue com um monstro durante o combate. Se o tesouro for capturado, o(s) jogador(es) que o obtiver(em) terá(ão) a opção de descartar cada carta de tesouro após olhá-la e comprar uma substituta, apenas uma vez.
+
+Maldição!
+Corcel flatulento.
+Seu corcel desenvolveu um sério problema de gás. Seu(s) mercenário(s) fogem. Você não pode ter nenhum Mercenário enquanto estiver com este Corcel.
+
+Escritor Fantasma. LVL 5. (Morto-vivo)
+Sua caneta é mais poderosa que sua espada. +4 contra Guerreiros.
+Coisas ruins: se você tiver algum mercenário, um deles o abandonará aterrorizado.
+2 Tesouros
+
+Gnomo Mercenário. +1 bônus.
+Pode carregar e usar qualquer item que seja legal para um Gnomo usar. Seus bônus e habilidades contam para você.
+O Gnome Mercenário também permite que você use um item Grande extra.
+
+Potter Peludo.LVL 15.
++3 contra magos. -3 contra Elfos. Resolva você mesmo.
+Não perseguirá ninguém de LVL 2 ou inferior.
+Coisas ruins: perca quaisquer itens específicos da sua classe.
+2 Levels. 4 Tesouros.
+
+Meio ...
+-5 para Monstro.
+Jogue durante qualquer combate. Se o monstro for derrotado, compre um Tesouro a menos (mínimo de 1)
+
+Mestiço. (REPETIDA 2X)
+Você pode ter duas cartas de Raça e ter todas as vantagens e desvantagens de cada uma. Ou você pode ter uma carta de Raça e ter todas as suas vantagens e nenhuma das suas desvantagens (por exemplo, monstros que odeiam Elfos não terão bônus contra um meio-elfo). Perca esta carta se perder sua(s) carta(s) de Raça.
+
+Mercenário. (Raça) (REPETIDA 3X)
+Você pode vender um item por turno pelo dobro do preço (outros itens têm preço normal).
+Se você falhar no teste inicial de Fugir, poderá descartar uma carta e tentar mais uma vez.
+
+Enorme.
++10 para monstro.
+Jogue durante o combate. Se o monstro for derrotado, compre dois tesouros extras.
+
+Ilusão.
+Jogue esta carta durante qualquer combate. Descarte qualquer monstro neste combate, junto com quaisquer cartas que tenham sido jogadas para modificá-lo, e substitua por uma carta de monstro da sua mão.
+
+Inteligente.
++5 para monstro.
+Jogue durante qualquer combate. Se o monstro for derrotado, compre um tesouro extra.
+
+Katrina. LVL 20.
+Não perseguirá ninguém de nível 5 ou inferior.
+Coisas ruins: todos os itens que você tem em jogo são destruídos, exceto os grandes. Descarte-os.
+2 Levels. 5 Tesouros.
+
+Duende. LVL 4.
+Ele é nojento! +5 contra Elfos.
+Coisas ruins: Ele pega dois itens de você - um escolhido pelo jogador de cada lado de você.
+2 Tesouros.
+
+Porco Chauvinista Masculino. LVL 8.
++5 contra mulheres. Mas um Tesouro extra para cada mulher que ajudar a derrotá-lo.
+Coisas ruins: as mulheres perdem a armadura. Os machos devem tomar uma cerveja com ele; Perder um nível.
+2 Tesouros.
+
+Maldição!
+Espelho Maligno.
+Você está amaldiçoado! Na sua próxima luta (apenas), você não poderá receber nenhum bônus de outros itens além da Armadura. Um Anel dos Desejos, usado antes da próxima luta, acabará com a maldição.
+
+Medusa. LVL 19.
+Cobras nojentas! +4 contra Elfos.
+Coisas ruins: você se transformou em pedra. Você está morto... e seus bens se transformam em pedra com você, então ninguém os pega.
+2 Levels. 5 tesouros.
+
+Besta Deslocadora. LVL 11.
+Perdeu o livro de regras, por isso não tem poderes especiais.
+Coisas ruins: Parece que você perdeu algumas cartas... Coloque sua mão virada para cima. Cada jogador, começando pelo nível mais baixo, pega uma carta da sua mão. Você pode ficar com qualquer restante.
+3 Tesouros.
+
+Esfinge de Munchkin. LVL 12.
+Está cansado de enigmas. Você tem um minuto para contar uma piada Toc-Toc ou receberá +5 contra você.
+Coisa ruim: perca um nível.
+3 Tesouros.
+
+Orc mercenário. +2 Bônus.
+Pode carregar e usar qualquer item que seja legal para um Orc usar. Seus bônus e habilidades contam para você.
+
+Orc. (RAÇA)
+Um Orc que for atingido por uma Maldição pode sempre optar por ignorar a Maldição e perder um nível - a menos que já esteja no Nível 1.
+Quando um Orc lutando sozinho derrota um monstro por mais de 10 pontos, ele sobe um nível extra.
+
+Platycore. Nv 6.
+Resiste à magia. +6 contra magos.
+Coisas ruins: descarte toda a sua mão ou perca 2 níveis.
+2 tesouros.
+
+Polly Hedron. LVL 2.
++4 contra Bardos.
+Coisas ruins: os dados odeiam você. Você falhará automaticamente em seu próximo teste para fugir.
+1 Tesouro.
+
+Planta em vaso. LVL 1.
+Elfos compram um tesouro extra após derrotá-lo.
+Coisas ruins: Nenhuma. Fuja automaticamente.
+1 Tesouro.
+
+Voraz.
++10 para monstro.
+Jogue durante qualquer combate. Se o monstro for derrotado, compre 2 tesouros extras.
+
+Lula Zila. LVL 18.
+Viscoso! Elfos estão com -4! Não perseguirá ninguém de nível 4 ou inferior, exceto Elfos.
+Coisas ruins: você é agarrado, viscoso, esmagado e devorado. Você está morto, morto, morto. Alguma pergunta?
+2 Levels. 4 Tesouros.
+
+Furtivo.
++5 para monstro.
+Um extra de 5+ contra Ladrões.
+Jogue durante qualquer combate. Se o monstro for derrotado, compre um Tesouro extra.
+
+Super Munchkin. (REPETIDA 2X)
+Você pode ter duas cartas de Classe e ter todas as vantagens e desvantagens de cada uma. Ou você pode ter uma carta Classe e ter todas as suas vantagens e nenhuma de suas desvantagens (por exemplo, monstros que odeiam Clérigos não terão bônus contra um Super CLeric).
+Perca esta carta se você perder todas as suas cartas de Classe.
+
+Maldição!
+Amnésia temporária.
+Uma pancada na cabeça faz você esquecer sua(s) Classe(s) e Raça(s).
+Você só se lembrará deles depois de matar ou ajudar a matar um monstro. Até então, você é um Humano sem classes para todos os efeitos.
+
+Tequila Mockingbird. LVL 1.
+Canto horrível e bêbado, muito parecido com o de um Bardo. +5 contra Bardos.
+Coisas ruins: você comeu o verme! Descarte duas cartas (à sua escolha) da sua mão.
+1 Tesouro.
+
+Os Trolls do Mar Morto. LVL 12. (Morto-vivo)
++5 contra Elfos devido ao seu fedor horrível. No entanto, todos recebem +1 para Fugir.
+Coisas ruins: jogue um dado e perca tantos níveis.
+3 Tesouros.
+
+Ladrão. (Classe)
+Ataque pelas costas: você pode descartar uma carta para dar um ataque pleas costas em outro jogador (-2 em combate). Você pode fazer isso apenas uma vez por vítima por combate, mas se dois jogadores estiverem lutando contra um monstro juntos, você poderá apunhalar cada um deles pelas costas.
+Roubo: Você pode descartar uma carta para tentar roubar um pequeno item carregado por outro jogador. Jogue um dado, se tirar 4 ou mais, sucesso. Caso contrário, você será atingido e perderá um nível.
+
+Demônio da Língua. LVL 12.
+Uma criatura do Inferno. +4 contra Clérigos. Você deve descartar um item (à sua escolha) antes do combate.
+Coisas ruins: Um beijo realmente nojento custa 2 níveis (3 para elfos).
+3 Tesouros.
+
+Maldição verdadeiramente desagradável!
+Perca o item que lhe dá o maior bônus.
+
+Erro tipográfico.
+Jogue durante o combate. Um monstro contém um erro de digitação na descrição; como resultado, ele é tratado para todos os efeitos como sendo de nível 1. Seus poderes e Tesouro permanecem inalterados.
+
+Malvestido. +5 para monstro.
+Pare de olhar e bata nele!
+Jogue durante qualquer combate. Se o monstro for derrotado, compre um tesouro extra.
+
+Muito Deprimido. -5 para monstro.
+Jogue durante o combate. Se o monstro for derrotado, compre um tesouro a menos (mínimo de 1). Não compatível com Enraged - se um deles for jogado, o outro não poderá ser jogado no mesmo combate.
+
+Monstro Errante. (REPETIDO 2X)
+Jogue esta carta, com um Monstro da sua mão, quando alguém (incluindo você!) estiver em combate. Seu monstro se junta ao que já está lutando - adicione sua força de combate. Se o(s) personagem(s) precisar(em) fugir, resolva as tentativas de Fuga separadamente, na ordem que a vítima escolher.
+
+Guerreiro. (CLASSE)
+Berserking: Você pode descartar até 3 cartas em combate; cada um oferece um bônus de +1.
+Você ganha empates em combate.
+
+Mago Mercenário. +2 bônus.
+Pode carregar e usar qualquer item que seja legal para um mago usar. Seus bônus e habilidades contam para você.
+
+Mago. (CLASSE)
+Feitiço de Voo: você pode descartar até três cartas após lançar o dado para Fugir; cada um lhe dá um bônus de +1 para fugir.
+Feitiço de Charme: Você pode descartar toda a sua mão (mínimo três cartas) para encantar um único Monstro em vez de lutar contra ele. Descarte o Monstro e pegue seu Tesouro, mas não ganhe níveis. Se houver outros monstros em combate, lute contra eles normalmente.
+
+Maldição!
+Mude de sexo.
+-5 no seu próximo combate devido à distração. Depois disso, não há mais penalidade. No entanto, a mudança é permanente.
+
+Trair!
+Jogue esta carta com uma carta de Item que você tem em jogo ou quando jogar uma carta de Item da sua mão. Este item é legal para você usar, mesmo que de outra forma não fosse. Descarte esta carta quando você perder (vender, etc.) o item anexado.
+
+Maldição!
+Frango na sua cabeça.
+-1 em todas as suas jogadas de dados. Qualquer maldição ou coisa ruim que remova seu capacete levará o frango junto.
+
+Intervenção Divina.
+Você deve jogar esta carta assim que a obtiver.
+Todos os Clérigos sobem imediatamente de nível. Este pode ser o nível vencedor. Se esta carta o fizer vencer, você tem o direito de zombar impiedosamente dos outros jogadores.
+
+Pato da Perdição.
+Você deveria saber que não se deve pegar um pato em uma masmorra. Perca 2 níveis.
+
+Nariz flutuante. LVL 10.
+Se você não quiser lutar contra o Nariz Flutuante, você pode suborná-lo com um item no valor de pelo menos 200 Peças de Ouro, e ele o deixará ir.
+Coisas ruins: pode farejar você em qualquer lugar. Se você perder, não poderá fugir; nada irá ajudá-lo. Perca 3 níveis.
+3 Tesouros.
+
+Sapos Voadores. LVL 2.
+-1 para fugir.
+Coisas ruins: eles mordem! Perca 2 níveis.
+1 Tesouro.
+
+Mirante. LVL 8.
+Ninguém pode ajudá-lo. Você deve enfrentar o Mirante sozinho.
+Coisas ruins: perca 3 níveis.
+2 Tesouros.
+
+Octaedro gelatinoso. LVL 2.
++1 para fugir.
+Coisas ruins: deixe cair todos os seus itens grandes.
+1 Tesouro.
+
+Demônios Demoníacos. Nv 8.
+Nenhum item ajuda contra eles - lute apenas com o seu nível.
+Coisas Ruins: Seu Nível se torna igual ao Nível mais baixo de qualquer personagem em jogo.
+2 Tesouros.
+
+Caranguejos. Nível 1.
+Não pode ser superado!
+Coisas ruins: descarte a armadura e todos os itens usados ​​abaixo da cintura.
+1 Tesouro.
+
+Harpias. LVL 4.
+Eles resistem à magia. +5 contra Feiticeiros.
+Coisas ruins: a música deles é realmente ruim. Perca 2 níveis.
+2 Tesouros.
+
+Me ajude aqui!
+Jogue esta carta enquanto estiver em combate. Pegue um item de qualquer outro jogador. No momento em que você o pega, esse item deve fazer a diferença entre vencer ou perder aquele combate. Você pode descartar algo de sua preferência antes de pegar o item, se desejar.
+
+Hipopogrifo. LVL 16.
+Não perseguirá ninguém de nível 3 ou inferior.
+Coisas ruins: você é pisoteado e mastigado. Você deixa cair coisas enquanto foge. Começando com o jogador à sua direita, cada um na sua frente ou (sem olhar) na sua mão.
+2 Levels. 4 tesouros.
+
+Maldição!
+Imposto de Renda.
+Descarte um item de sua escolha. Cada outro jogador deve agora descartar um item, ou itens, totalizando pelo menos tanto valor quanto o item que você descartou. Se não tiverem o suficiente para pagar o imposto integral, deverão descartar todos os seus itens e perder um nível.
+
+Rei Tut. LVL 16. Morto-vivo.
+Não perseguirá ninguém de nível 3 ou inferior. Personagens de nível superior perdem 2 níveis, mesmo que escapem.
+Coisas ruins: perca todos os seus itens e todas as cartas da sua mão.
+2 Levels. 4 Tesouros.
+
+Duende manco. LVL 1.
++1 para fugir.
+Coisas ruins: ele bate em você com a muleta. Perder um nível.
+1 Tesouro.
+
+Grande Galinha Irritada. LVL 2.
+Frango frito é delicioso. Ganhe um nível extra se você derrotá-lo com fogo ou chamas.
+Coisas ruins: bicadas muito dolorosas. Perder um nível.
+1 Tesouro.
+
+Advogados. LVL 6.
+Não atacará um Ladrão (cortesia profissional). Um Ladrão que encontre um Advogado pode descartar dois Tesouros e comprar dois novos virados para baixo.
+Coisas ruins: ele bate em você com uma liminar. Deixe que cada outro jogador compre uma carta da sua mão, começando pelo jogador à sua esquerda. Descarte qualquer restante.
+2 tesouros.
+
+Maldição!
+Perca 1 item grande.
+Escolha um item grande para descartar.
+
+Maldição! (REPETIDO 2X)
+Perca 1 item pequeno.
+Escolha um item pequeno para descartar. Qualquer item que não seja designado como Grande é pequeno.
+
+Maldição! (REPETIDO 2X)
+Perca 1 Level.
+
+Maldição!
+Perca a armadura que você está vestindo.
+
+Maldição!
+Perca o calçado que você está vestindo.
+
+Maldição!
+Perca 2 cartas.
+Primeiro, o jogador à esquerda da vítima tira uma carta da mão da vítima e guarda-a. Então o jogador da direita faz o mesmo.
+
+Maldição!
+Perca sua Classe.
+Descarte sua carta de Classe, se você tiver um. Se você tiver 2 Classes em jogo, perca uma delas (sua escolha). Se você não tiver Classe, perca um nível.
+
+Maldição!
+Perca sua Raça.
+Descarte quaisquer Raça(s) que você tenha em jogo e torne-se um humano.
+
+Amigo.
+Outro monstro aparece do mesmo nível e com todos os mesmos Monster Enhancers. Se os monstros forem derrotados, compre tesouros para cada um e suba de nível para cada um.
+
+Maul Rato. LVL 1.
+Uma criatura do Inferno. +3 contra o Celtics.
+Coisas ruins: ela bate em você. Perca 1 nível.
+1 Tesouro.
+
+Sr. Bones. Lvl 2. (Morto-Vivo)
+Se você precisar fugir, você perde um nível mesmo que escape.
+Coisas ruins: Seu toque ossudo custa 2 níveis.
+1 Tesouro.
+
+Troll líquido. Lvl 10.
+Ele não tem poderes especiais e está realmente bravo com isso.
+Coisas ruins: atrapalha o equilíbrio do jogo, forçando você a deixar o(s) jogador(es) de nível mais alto pegarem qualquer item (cada um) de você.
+3 tesouros.
+
+Almoço fora.
+O monstro nesta sala está de folga. Jogue esta carta durante qualquer combate. O jogador que enfrenta o(s) monstro(s) descarta todos eles e compra duas cartas de Tesouro imediatamente.
+
+Pitbull. Lvl 2.
+Se você não puder derrotá-lo, você pode distraí-lo (fuga automática) deixando cair qualquer varinha, poste ou cajado. (Busque, Fido!)
+Coisas ruins: marcas de presas em sua bunda. Perca 2 níveis.
+1 Tesouro
+
+Dragão de Plutônio. Lvl 20.
+Não perseguirá ninguém de nível 5 ou inferior.
+Coisas ruins: você está assado e comido. Você está morto.
+2 Levels. 5 Tesouros.
+
+Pukachu. Lvl 6.
+Ganhe um nível extra se você derrotá-lo sem usar ajuda ou bônus.
+Coisa ruim: ataque de vômito com projéteis! Descarte toda a sua mão.
+2 Tesouros.
+
+Geek gritando. Lvl 6.
++6 contra Guerreiros.
+Coisas ruins: você se torna um humano normal e chato. Descarte quaisquer cartas de Raça ou Classe em jogo.
+2 Tesouros.
+
+Caracóis em velocidade. Lvl 4.
+-2 para fugir.
+Coisas ruins: eles roubam seu tesouro. Jogue um dado e perca a mesma quantidade de itens ou cartas em sua mão - sua escolha.
+2 Tesouros.
+
+Golem Apedrejado. Lvl 14.
+Você pode escolher entre lutar contra o Golem Apedrejado ou apenas acenar, passar e deixá-lo ficar com seu tesouro.
+(EXCEÇÃO: Halflings parecem saborosos e devem lutar).
+Coisas ruins: ele está com larica. Ele te pega. Você está morto.
+4 Tesouros.
+
+Cavalo Morto-Vivo. Lvl 4. (Morto-Vivo)
++5 contra Anões.
+Coisas ruins: Chuta, morde e cheira horrível. Perca 2 níveis.
+2 tesouros.
+
+Horror indescritivelmente horrível e indescritível. Lvl 14.
++4 contra Guerreiros.
+Coisas ruins: morte indescritivelmente terrível para qualquer um, exceto um mago. Um mago simplesmente perde seus poderes – descarte a carta de Mago.
+4 Tesouros.
+
+Aspirante a Vampiro. Lvl 12.
+Em vez de lutar, um Clérigo pode afugentar o Aspirante a Vampiro apenas dizendo "booga booga" e pegar todo o seu Tesouro. Não há aumento de nível para isso!
+Coisas ruins: bloqueia a porta e conta sobre seu personagem. Perca 3 níveis.
+3 tesouros.
+
+Irmãos Wright. Lvl 16. (Morto-Vivo)
+Não perseguirá ninguém de nível 3 ou inferior. Personagens de nível superior perdem 2 níveis, mesmo que escapem.
+Coisas ruins: você é reduzido ao nível 1.
+2 Levels. 4 tesouros.
+
+
+						Tesouro
+1,000 peças de ouro.
+Suba um nível.
+
+Bandana Malvada
++3 Bônus.
+Utilizável apenas por humanos.
+Item de cabeça. 400 Peças de Ouro
+
+Botas de chutar traseiros
++2 Bônus
+Item de pé. 400 Peças de Ouro
+
+Botas de correr muito rápido.
+Dá a você +2 para Fugir.
+Item de pé. 400 Peças de Ouro.
+
+Suborne com comida.
+Suba 1 level.
+
+Espada Larga.
++3 Bônus.
+Utilizável apenas por fêmeas.
+Item de 1 mão. 400 Peças de Ouro.
+
+Broquel de Lavagem.
++2 Bônus.
+Item de 1 mão. 400 Peças de Ouro.
+
+Motosserra de Desmembramento Sangrenta.
++3 Bônus.
+Item de 2 mãos. 600 Peças de Ouro.
+
+Ralador de Queijo da Paz.
+Utilizável apenas por Clérigos.
+Item de 1 mão. 400 Peças de Ouro.
+
+Manto da Obscuridade.
++4 Bônus.
+Utilizável apenas por Ladrões.
+600 Peças de Ouro.
+
+Erro de adição Conveniente.
+Suba 1 level.
+
+Coção de Ponfusão.
+Usar durante qualquer combate. +3 para qualquer lado. Utilizável apenas uma vez.
+100 Peças de Ouro.
+
+Adaga da Traição.
+Utilizável apenas por Ladrões.
+Item de 1 mão. 400 Peças de Ouro.
+
+Sósia.
+Invoca sua duplicata exata, que luta ao seu lado, para que você dobre sua força de combate. Você pode usar o Sósia somente quando for o único jogador no combate. Utilizável apenas uma vez.
+300 Peças de Ouro.
+
+Poção Elétrica de Ácido Radioativo.
+Use durante qualquer combate. +5 para qualquer lado. Utilizável apenas uma vez.
+200 Peças de Ouro.
+
+Poste de Onze Pés.
++1 Bônus.
+Item de 2 mãos. 200 Peças de Ouro.
+
+Armadura Flamejante.
++2 Bônus.
+Item de armadura. 400 Peças de Ouro.
+
+Poção Venenosa Flamejante.
+Usar durante qualquer combate. +3 para qualquer lado. Utilizável apenas uma vez.
+100 Peças de Ouro.
+
+Frasco de cola.
+Use quando alguém escapou com sucesso de um combate por qualquer motivo. Eles devem rolar novamente sua fuga (mesmo que tenha sido automática na primeira vez). Utilizável apenas uma vez.
+100 Peças de Ouro.
+
+Poção Explosiva Congelante.
+Use durante qualquer combate. +3 para qualquer lado. Utilizável apenas uma vez.
+100 Peças de Ouro.
+
+Poção de Amizade.
+Use durante qualquer combate. Descarte todos os monstros do combate. Nenhum tesouro é ganho, mas o jogador pode saquear a sala. Utilizável apenas uma vez.
+200 Peças de Ouro.
+
+Clube dos Cavalheiros.
++3 Bônus.
+Utilizável apenas por homens.
+Item de 1 mão. 400 Peças de Ouro.
+
+Martelo de Joelheira.
++4 Bônus.
+Utilizável apenas por anões.
+Item de 1 mão. 600 Peças de Ouro.
+
+Leme de Coragem.
++1 Bônus.
+Item de cabeça. 200 Peças de Ouro.
+
+Mercenário.
++1 Bônus.
+Permite que você carregue e use um item extra, mesmo que não pudesse de outra forma. Se você perder seu mercenário, o item também será perdido.
+Você pode descartar seu mercenário para escapar automaticamente de qualquer monstro.
+Mantenha esta carta à sua frente, junto com seus Tesouros.
+
+Acumular!
+Compre mais 3 cartas de tesouro imediatamente. Eles estão virados para baixo se você comprou esta carta virada para baixo; caso contrário, eles estão voltados para cima.
+
+Capacete Córneo.
++1 Bônus (+3 para Elfos)
+Item de cabeça. 600 Peças de Ouro.
+
+Rocha Enorme.
++3 Bônus.
+Item de 2 mãos. Grande. Sem valor.
+
+Poção de Bravura Idiota.
+Usar durante qualquer combate. +2 para qualquer lado. utilizável apenas uma vez.
+100 Peças de Ouro.
+
+Parede Instantânea.
+Permite fuga automática, para um ou dois jogadores, de qualquer luta. Utilizável apenas uma vez.
+300 Peças de Ouro.
+
+Poção da Invisibilidade.
+Use quando sua fuga falhar. Você escapa automaticamente. Utilizável apenas uma vez.
+200 Peças de Ouro.
+
+Invoque Regras Obscuras.
+Suba 1 level.
+
+Joelheiras de Fascínio.
+Não utilizável por Clérigos.
+Nenhum jogador com nível superior ao seu pode recusar seu pedido de ajuda contra um monstro, ou mesmo pedir uma recompensa. Você não pode ganhar o nível de vitória em um combate onde seu ajudante foi compelido pelas Joelheiras.
+600 Peças de Ouro.
+
+Armadura de Couro.
++1 Bônus.
+Item de armadura. 200 Peças de Ouro.
+
+Sanduíche de Limburger e Anchova.
+Utilizável apenas por Mercenários.
++3 Bônus.
+400 Peças de Ouro.
+
+Dado carregado.
+Jogue depois de lançar o dado, por qualquer motivo. Gire o dado para que o número de sua escolha fique no topo. Esse é o seu papel.
+Utilizável apenas uma vez.
+300 peças de ouro.
+
+Mago da Nitidez.
++4 Bônus.
+Utilizável somente por Clérigos.
+Item de 1 mão. 600 Peças de Ouro.
+
+Lâmpada Mágica.
+Você só pode usar a Lâmpada no seu turno. Ele invoca um gênio que faz um único monstro desaparecer, mesmo que você já tenha falhado no teste de Fugir e ele esteja prestes a pegá-lo. Se era o único monstro que você estava enfrentando, você pode pegar o tesouro dele, mas não ganha nível. Utilizável apenas uma vez.
+500 Peças de Ouro.
+
+Míssel Mágico.
+Usar durante qualquer combate. +2 para qualquer lado. utilizável apenas uma vez.
+300 Peças de Ouro.
+
+Armadura de Mithril.
++3 Bônus.
+Não utilizável por Magos.
+Item de armadura. Grande. 600 Peças de Ouro.
+
+Mutilar os Corpos.
+Esta carta só pode ser jogada após o combate, mas não precisa ser o seu combate.
+Suba 1 Level.
+
+Bebida Esportiva de Sabor Desagradável.
+Usar durante qualquer combate. +2 para qualquer lado. utilizável apenas uma vez.
+200 Peças de Ouro.
+
+Meia-calça de Força Gigante.
++3 Bônus.
+Não utilizável por Guerreiros.
+600 Peças de Ouro.
+
+Chapéu Pontudo do Poder.
++3 Bônus.
+Utilizável somente por Magos.
+Item de cabeça. 400 Peças de Ouro.
+
+Poção Polimórfica.
+Use durante qualquer combate. Transforma qualquer monstro em um papagaio, que voa, deixando seu tesouro para trás. Utilizável apenas uma vez.
+1300 Peças de Ouro.
+
+Poção da Halitose.
+Use durante qualquer combate. +2 para qualquer lado ou mata instantaneamente o Nariz Flutuante. Utilizável apenas uma vez.
+100 Peças de Ouro.
+
+Balões lindos.
+Usar durante qualquer combate. +5 para qualquer lado. utilizável apenas uma vez.
+Sem valor.
+
+Florete da Injustiça.
++3 Bônus. Utilizável somente por Elfos.
+Item de 1 mão. 600 Peças de Ouro.
+
+Rato no Palito.
++1 Bônus.
+Ei, é melhor que nada!
+Você pode descartar este item, mesmo que esteja apenas carregando-o, para escapar automaticamente de qualquer monstro de nível 8 ou inferior.
+Item de 1 mão. Sem valor.
+
+Título Realmente Impressionante.
++3 Bônus.
+
+Sandálias de Proteção.
+As cartas de maldição que você compra ao derrubar uma porta não têm efeito. (Maldições lançadas por outros jogadores ainda afetarão você).
+Item de pé. 700 Peças de Ouro.
+
+Armadura Curta e Larga.
++3 Bônus.
+Utilizável somente por Anões.
+Item de armadura. 400 Peças de Ouro.
+
+Espada Cantante e Dançante
++2 Bônus.
+Não utilizável por Ladrões.
+400 Peças de Ouro.
+
+Poção do Sono.
+Usar durante qualquer combate. +2 para qualquer lado. utilizável apenas uma vez.
+100 Peças de Ouro.
+
+Armadura Viscosa.
++1 Bônus.
+Item de armadura. 200 Peças de Ouro.
+
+Espada Bastarda Sorrateira.
++2 Bônus.
+Item de 1 mão. 400 Peças de Ouro.
+
+Joelhos Pontiagudos.
++1 Bônus.
+200 Peças de Ouro.
+
+Cajado de Napalm.
++5 Bônus.
+Utilizável somente por Magos.
+Item de 1 mão. 800 Peças de Ouro.
+
+Roube um nível.
+Escolha um jogador para roubar um nível.
+Você sobe um. Ele desce um.
+
+Escada.
++3 Bônus.
+Utilizável somente por Mercenários.
+Item grande. 400 Peças de Ouro.
+
+Arma do Exército Suiço.
++4 Bônus.
+Utilizável somente por Humanos.
+Item de 2 mãos. Item Grande. 600 Peças de Ouro.
+
+Poção de Transferência.
+Jogue em um combate para que outro jogador o enfrente e possa pedir ajuda, ganhando os tesouros e níveis se vencer. O jogador original retoma seu turno e pode saquear a sala, independentemente do resultado. Usável uma vez.
+300 Peças de Ouro.
+
+Tuba do Charme.
+Este instrumento melodioso cativa seus inimigos, dando a você +3 de Fuga. Se você escapar do combate com sucesso, pegue um Tesouro virado para baixo ao sair.
+Item de 1 mão. Grande. 300 Peças de Ouro.
+
+Varinha de Radiestesia.
+Percorra os descartes para encontrar a carta que desejar. Pegue aquela carta e descarte esta.
+1100 Gold Pieces.
+
+Chorar para o GM.
+Você não pode usar isso se for atualmente o jogador de nível mais alto ou se estiver empatado no nível mais alto.
+Suba um nível.
+
+Anel dos Desejos. (REPETIDO 2X)
+Cancela qualquer maldição. Jogue a qualquer hora. Utilizável apenas uma vez.
+500 Peças de Ouro.
+
+Água Yuppie
+Use durante qualquer combate. Pode ser usado apenas uma vez e apenas para ajudar Elfos. +2 para cada Elfo na batalha.
+100 Peças de Ouro.

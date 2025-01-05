@@ -1,128 +1,190 @@
-import random
 from classes.card import MonsterCard, CurseCard, TreasureCard
-# Se você tiver ClassCard, RaceCard, etc., importe também
-# from classes.card import ClassCard, RaceCard
-# ...
 from classes.card import Card
 
 class Deck:
     """Representa um baralho genérico."""
     def __init__(self):
-        self.cards = []  # Lista de cartas
+        self.cards = []
 
     def add_card(self, card):
-        """Adiciona uma carta ao baralho."""
         self.cards.append(card)
 
     def shuffle(self):
-        """Embaralha o baralho."""
+        import random
         random.shuffle(self.cards)
 
     def draw_card(self):
-        """
-        Retira uma carta do topo do baralho.
-        Retorna None se o baralho estiver vazio.
-        """
-        if self.cards:
-            return self.cards.pop()
-        return None
+        return self.cards.pop() if self.cards else None
 
     def __len__(self):
-        """Retorna o número de cartas restantes no baralho."""
         return len(self.cards)
 
-
 class DoorDeck(Deck):
-    """
-    Baralho específico de 'Portas' (Monstros, Maldições, Raças, Classes...).
-    """
     def __init__(self):
         super().__init__()
         self._create_door_cards()
         self.shuffle()
 
     def _create_door_cards(self):
-        """
-        Exemplo de cartas que entram no baralho de PORTA.
-        Ajuste nomes, descrições e efeitos conforme suas regras.
-        """
-        # 1. Monstro Goblin
+        # Adicionando monstros
         self.add_card(MonsterCard(
-            nome="Goblin",
+            nome="3,872 Orcs",
+            nivel=10,
+            tesouros=3,
+            texto_derrota="Jogue um dado. Com 2 ou menos, eles o pisoteiam até a morte. Caso contrário, perca tantos níveis quanto o dado mostrar.",
+            texto_vitoria="",
+            imagem="assets/cards/Porta/3.872 Orcs.jpg"
+        ))
+
+        self.add_card(MonsterCard(
+            nome="Amazona",
+            nivel=8,
+            tesouros=2,
+            texto_derrota="Você levou um chute na bunda de uma mulher. Perca sua(s) classe(s). Se já não tinha Classe, perca 3 níveis.",
+            texto_vitoria="",
+            imagem="assets/cards/Porta/Amazon.jpg"
+        ))
+
+        self.add_card(MonsterCard(
+            nome="Tia Paladina",
+            nivel=18,
+            tesouros=4,
+            texto_derrota="Perde a armadura. Perder três níveis devido a um espancamento quase fatal.",
+            texto_vitoria="",
+            imagem="assets/cards/Porta/Auntie Paladin.jpg"
+        ))
+
+        self.add_card(MonsterCard(
+            nome="Bullrog",
+            nivel=18,
+            tesouros=5,
+            texto_derrota="Você é esfolado até a morte.",
+            texto_vitoria="",
+            imagem="assets/cards/Porta/Bullrog.jpeg"
+        ))
+
+        self.add_card(MonsterCard(
+            nome="Lodo Babando",
             nivel=1,
             tesouros=1,
-            texto_derrota="Você perde 1 nível.",
-            texto_vitoria="Você ganha 1 tesouro adicional.",
-            imagem="assets/cards/goblin.png"
+            texto_derrota="Descarte os calçados que você está usando. Perca um nível se não tiver calçados.",
+            texto_vitoria="",
+            imagem="assets/cards/Porta/Drooling Slime.jpg"
         ))
 
-        # 2. Monstro "Magia" (só exemplo, caso queira)
         self.add_card(MonsterCard(
-            nome="Magia Estranha",
-            nivel=2,
-            tesouros=1,
-            texto_derrota="Você perde 2 níveis.",
-            texto_vitoria="Receba 2 tesouros extras.",
-            imagem="assets/cards/magia.png"
+            nome="Pé Grande",
+            nivel=12,
+            tesouros=3,
+            texto_derrota="Pisoteia você e come seu chapéu. Perca o capacete que você estava usando.",
+            texto_vitoria="",
+            imagem="assets/cards/Porta/Bigfoot.jpg"
         ))
 
-        # 3. Carta de Maldição (curse.png)
         self.add_card(CurseCard(
-            nome="Maldicao Flecha",
-            efeitos="Você perde 1 item equipado.",
-            imagem="assets/cards/flecha.png"
+            nome="Mude de Sexo",
+            efeitos="-5 no seu próximo combate devido à distração. Depois disso, não há mais penalidade.",
+            imagem="assets/cards/Porta/Change Sex.jpeg"
         ))
 
-        # 4. Outra Maldição
         self.add_card(CurseCard(
-            nome="Perde 1 Nível",
-            efeitos="Você perde 1 nível imediatamente.",
-            imagem="assets/cards/curse.png"
+            nome="Amnésia Temporária",
+            efeitos="Esqueça sua(s) Classe(s) e Raça(s) até matar um monstro ou ajudar a matá-lo.",
+            imagem="assets/cards/Porta/Temporary Amnesia.jpg"
         ))
 
+        self.add_card(MonsterCard(
+            nome="Gazebo",
+            nivel=8,
+            tesouros=2,
+            texto_derrota="Não faça nada. Apenas olhe com medo.",
+            texto_vitoria="Ganhe 2 tesouros.",
+            imagem="assets/cards/Porta/Gazebo.jpeg"
+        ))
+
+        self.add_card(MonsterCard(
+            nome="Pukaku",
+            nivel=6,
+            tesouros=2,
+            texto_derrota="Perca 1 nível e um item pequeno.",
+            texto_vitoria="Você coleta 2 tesouros.",
+            imagem="assets/cards/Porta/Pukaku.jpeg"
+        ))
 
 class TreasureDeck(Deck):
-    """
-    Baralho específico de 'Tesouros' (itens, equipamentos, etc.).
-    """
     def __init__(self):
         super().__init__()
         self._create_treasure_cards()
         self.shuffle()
 
     def _create_treasure_cards(self):
-        """
-        Exemplo de cartas que entram no baralho de TESOURO.
-        Ajuste nomes, descrições e efeitos conforme suas regras.
-        """
-        # 1. Espada +2
+        # Adicionando tesouros
         self.add_card(TreasureCard(
-            nome="Espada +2",
+            nome="Espada Larga",
+            bonus=3,
+            descricao="Utilizável apenas por fêmeas.",
+            imagem="assets/cards/Tesouro/Broad Sword.jpeg"
+        ))
+
+        self.add_card(TreasureCard(
+            nome="Ralador de Queijo da Paz",
+            bonus=3,
+            descricao="Utilizável apenas por Clérigos.",
+            imagem="assets/cards/Tesouro/Cheese Grater Of Peace.jpeg"
+        ))
+
+        self.add_card(TreasureCard(
+            nome="Sanduíche de Limburger e Anchova",
+            bonus=3,
+            descricao="Utilizável apenas por Mercenários.",
+            imagem="assets/cards/Tesouro/Limburger And Anchovy Sandwich.jpeg"
+        ))
+
+        self.add_card(TreasureCard(
+            nome="Poção Explosiva Congelante",
+            bonus=3,
+            descricao="Usar durante qualquer combate. +3 para qualquer lado.",
+            imagem="assets/cards/Tesouro/Freezing Explosive Potion.jpeg"
+        ))
+
+        self.add_card(TreasureCard(
+            nome="Dado Carregado",
+            bonus=0,
+            descricao="Jogue após lançar o dado para escolher o resultado.",
+            imagem="assets/cards/Tesouro/Loaded Die.jpeg"
+        ))
+
+        self.add_card(TreasureCard(
+            nome="Poção da Invisibilidade",
+            bonus=0,
+            descricao="Use quando sua fuga falhar. Você escapa automaticamente.",
+            imagem="assets/cards/Tesouro/Invisibility Potion.jpeg"
+        ))
+
+        self.add_card(TreasureCard(
+            nome="Joelheiras de Fascínio",
+            bonus=0,
+            descricao="Nenhum jogador de nível superior ao seu pode recusar seu pedido de ajuda contra um monstro.",
+            imagem="assets/cards/Tesouro/Kneepads Of Allure.jpeg"
+        ))
+
+        self.add_card(TreasureCard(
+            nome="Armadura de Flamengante",
+            bonus=4,
+            descricao="Oferece proteção extra contra monstros do tipo fogo.",
+            imagem="assets/cards/Tesouro/Flaming Armor.jpeg"
+        ))
+
+        self.add_card(TreasureCard(
+            nome="Poção de Halitose",
             bonus=2,
-            descricao="Aumenta seu poder em 2.",
-            imagem="assets/cards/espada.png"
+            descricao="Causa danos ao monstro. Usável uma vez.",
+            imagem="assets/cards/Tesouro/Potion Of Halitosis.jpeg"
         ))
 
-        # 2. Escudo +1
         self.add_card(TreasureCard(
-            nome="Escudo +1",
-            bonus=1,
-            descricao="Aumenta sua defesa em 1.",
-            imagem="assets/cards/escudo.png"
-        ))
-
-        # 3. Poção
-        self.add_card(TreasureCard(
-            nome="Poção de Cura",
+            nome="Anel de Desejo",
             bonus=0,
-            descricao="Cura um jogador em 1 nível.",
-            imagem="assets/cards/pocao.png"
-        ))
-
-        # 4. Tesouro genérico (tesouro.png)
-        self.add_card(TreasureCard(
-            nome="Saco de Ouro",
-            bonus=0,
-            descricao="Pode ser vendido para ganhar 1 nível.",
-            imagem="assets/cards/tesouro.png"
+            descricao="Cancela qualquer maldição.",
+            imagem="assets/cards/Tesouro/Wishing Ring.jpeg"
         ))

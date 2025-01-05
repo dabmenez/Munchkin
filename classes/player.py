@@ -1,5 +1,6 @@
 from classes.hand import Hand
 from classes.card import Card
+from classes.card import CurseCard
 
 class Mochila:
     """
@@ -70,6 +71,23 @@ class Player:
     def decrease_level(self, amount=1):
         """Diminui o nível do jogador (mínimo nível 1)."""
         self.level = max(1, self.level - amount)
+
+    def apply_curse(self, curse_card: CurseCard):
+        """Aplica os efeitos de uma maldição ao jogador."""
+        if isinstance(curse_card, CurseCard):
+            # Reduzir níveis, se especificado na maldição
+            if "nível" in curse_card.efeitos.lower():
+                self.decrease_level()
+                print(f"{self.name} perdeu 1 nível devido à maldição {curse_card.nome}!")
+
+            # Exemplos adicionais: remover itens ou outros efeitos
+            if "remova um item" in curse_card.efeitos.lower():
+                if self.equipment.get_equipped():
+                    item_removido = self.equipment.get_equipped()[0]
+                    self.equipment.unequip_item(item_removido)
+                    print(f"{self.name} perdeu o item equipado: {item_removido.nome}")
+                else:
+                    print(f"{self.name} não tinha itens equipados para perder.")
 
     # Métodos de atalho, se quiser manipular a mochila/equipment diretamente:
     def add_to_backpack(self, card: Card):
