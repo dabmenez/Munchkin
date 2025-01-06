@@ -21,7 +21,6 @@ Thumbs.db
 
 # Compiled assets
 *.pyo
-*.exe
 *.dll
 *.so
 *.dylib
@@ -30,3 +29,6 @@ Thumbs.db
 *.ogg~
 *.mp3~
 *.png~
+
+build/
+*.pkg

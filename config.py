@@ -1,19 +1,21 @@
-# config.py
-
+import os
+import sys
 import pygame
 
-# ======== Caminhos de arquivos ========
-BACKGROUND_IMG_PATH     = "assets/background.jpg"
-TITLE_IMG_PATH          = "assets/title.png"
-BUTTON_PLAY_IMG         = "assets/buttons/play_button.png"
-BUTTON_OPTIONS_IMG      = "assets/buttons/options_button.png"
-BUTTON_EXIT_IMG         = "assets/buttons/exit_button.png"
-BUTTON_LOGO_CHARACTER   = "assets/buttons/logo_character.png"
+# Base path para localizar arquivos, considerando execução normal e executável
+BASE_PATH = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
 
-BACKGROUND_MUSIC   = "assets/sounds/background_music.mp3"
-CLICK_SOUND_PATH        = "assets/sounds/click.wav"
+# Caminhos ajustados
+BACKGROUND_IMG_PATH     = os.path.join(BASE_PATH, "assets/background.jpg")
+TITLE_IMG_PATH          = os.path.join(BASE_PATH, "assets/title.png")
+BUTTON_PLAY_IMG         = os.path.join(BASE_PATH, "assets/buttons/play_button.png")
+BUTTON_OPTIONS_IMG      = os.path.join(BASE_PATH, "assets/buttons/options_button.png")
+BUTTON_EXIT_IMG         = os.path.join(BASE_PATH, "assets/buttons/exit_button.png")
+BUTTON_LOGO_CHARACTER   = os.path.join(BASE_PATH, "assets/buttons/logo_character.png")
 
-FONT_PATH               = "assets/fonts/comicsans.ttf"
+BACKGROUND_MUSIC        = os.path.join(BASE_PATH, "assets/sounds/background_music.mp3")
+CLICK_SOUND_PATH        = os.path.join(BASE_PATH, "assets/sounds/click.wav")
+FONT_PATH               = os.path.join(BASE_PATH, "assets/fonts/comicsans.ttf")
 
 # ======== Cores ========
 BRANCO       = (255, 255, 255)
@@ -22,7 +24,6 @@ CINZA        = (100, 100, 100)
 CINZA_ESCURO = (80,  80,  80)
 
 # ======== Resolução Base ========
-# O layout
 BASE_WIDTH  = 1920
 BASE_HEIGHT = 1080
 
